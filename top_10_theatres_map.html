@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cab220cab46c478e082dd8f5911f6064 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cab220cab46c478e082dd8f5911f6064" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cab220cab46c478e082dd8f5911f6064 = L.map(
+                "map_cab220cab46c478e082dd8f5911f6064",
+                {
+                    center: [20.593683, 78.962883],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_43708de9086e23a91885b98dc4f11036 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_43708de9086e23a91885b98dc4f11036.addTo(map_cab220cab46c478e082dd8f5911f6064);
+        
+    
+            var marker_0c1004b5ae4f834cf656cc5c388a3fc7 = L.marker(
+                [13.04541, 77.6266],
+                {
+}
+            ).addTo(map_cab220cab46c478e082dd8f5911f6064);
+        
+    
+            var icon_2d826ac79748ccc06560e847c5439b6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c1004b5ae4f834cf656cc5c388a3fc7.setIcon(icon_2d826ac79748ccc06560e847c5439b6b);
+        
+    
+        var popup_b6e3c352ba54fba69f06f12fbb2c56aa = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_3ad1547101be9b3394648f9392c02a1e = $(`<div id="html_3ad1547101be9b3394648f9392c02a1e" style="width: 100.0%; height: 100.0%;"><h2>Top Theatres in Bangalore</h2>     <h3>Theatre Name: PVR: Orion, Rajajinagar</h3>     <p>Revenue Potential: 24781594.31</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 2714</p>     <p>Average Ticket Price: 285.34</p>     <p>Number of Screens: 8</p>     <br><br>     <h3>Theatre Name: PVR: Forum, Bengaluru</h3>     <p>Revenue Potential: 18248960.00</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1590</p>     <p>Average Ticket Price: 286.93</p>     <p>Number of Screens: 10</p>     <br><br>     <h3>Theatre Name: INOX: Mantri Square, Malleshwaram</h3>     <p>Revenue Potential: 14337467.60</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: Inox</p>     <p>Total Seats: 1497</p>     <p>Average Ticket Price: 399.06</p>     <p>Number of Screens: 6</p>     <br><br>     <h3>Theatre Name: PVR: Market City, Bengaluru</h3>     <p>Revenue Potential: 12192057.85</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1106</p>     <p>Average Ticket Price: 306.21</p>     <p>Number of Screens: 9</p>     </div>`)[0];
+                popup_b6e3c352ba54fba69f06f12fbb2c56aa.setContent(html_3ad1547101be9b3394648f9392c02a1e);
+            
+        
+
+        marker_0c1004b5ae4f834cf656cc5c388a3fc7.bindPopup(popup_b6e3c352ba54fba69f06f12fbb2c56aa)
+        ;
+
+        
+    
+    
+            var marker_c837f23e84a8f8cffca9a9e3ee19aff3 = L.marker(
+                [19.14108, 72.84372],
+                {
+}
+            ).addTo(map_cab220cab46c478e082dd8f5911f6064);
+        
+    
+            var icon_c6f7f35e043049e5d4a468a218ffe0a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c837f23e84a8f8cffca9a9e3ee19aff3.setIcon(icon_c6f7f35e043049e5d4a468a218ffe0a8);
+        
+    
+        var popup_a4c9e653efb18f6d595cf8604e537061 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_f6e419e76c70b29d9d048be447cb0d71 = $(`<div id="html_f6e419e76c70b29d9d048be447cb0d71" style="width: 100.0%; height: 100.0%;"><h2>Top Theatres in Mumbai</h2>     <h3>Theatre Name: PVR: Phoenix, Lower Parel</h3>     <p>Revenue Potential: 16650417.78</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1760</p>     <p>Average Ticket Price: 337.87</p>     <p>Number of Screens: 7</p>     <br><br>     <h3>Theatre Name: INOX: R-City, Ghatkopar</h3>     <p>Revenue Potential: 15679477.54</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: Inox</p>     <p>Total Seats: 1220</p>     <p>Average Ticket Price: 357.00</p>     <p>Number of Screens: 9</p>     <br><br>     <h3>Theatre Name: PVR: Oberoi Mall, Goregaon (E)</h3>     <p>Revenue Potential: 11329854.17</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1782</p>     <p>Average Ticket Price: 264.91</p>     <p>Number of Screens: 6</p>     </div>`)[0];
+                popup_a4c9e653efb18f6d595cf8604e537061.setContent(html_f6e419e76c70b29d9d048be447cb0d71);
+            
+        
+
+        marker_c837f23e84a8f8cffca9a9e3ee19aff3.bindPopup(popup_a4c9e653efb18f6d595cf8604e537061)
+        ;
+
+        
+    
+    
+            var marker_5123db46b053ce6e8e6018f6c54b141a = L.marker(
+                [17.37651, 78.4196],
+                {
+}
+            ).addTo(map_cab220cab46c478e082dd8f5911f6064);
+        
+    
+            var icon_20626b8a7e4ede1fd80f4793b7f00842 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5123db46b053ce6e8e6018f6c54b141a.setIcon(icon_20626b8a7e4ede1fd80f4793b7f00842);
+        
+    
+        var popup_cbeefc751b4e0220a1f542c49beecec3 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_a68e382c95d28699b396df5725cc971d = $(`<div id="html_a68e382c95d28699b396df5725cc971d" style="width: 100.0%; height: 100.0%;"><h2>Top Theatres in Hyderabad</h2>     <h3>Theatre Name: PVR Forum Sujana Mall: Kukatpally, Hyderabad</h3>     <p>Revenue Potential: 15408000.00</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 2140</p>     <p>Average Ticket Price: 200.00</p>     <p>Number of Screens: 9</p>     </div>`)[0];
+                popup_cbeefc751b4e0220a1f542c49beecec3.setContent(html_a68e382c95d28699b396df5725cc971d);
+            
+        
+
+        marker_5123db46b053ce6e8e6018f6c54b141a.bindPopup(popup_cbeefc751b4e0220a1f542c49beecec3)
+        ;
+
+        
+    
+    
+            var marker_1fff94f2a4915dd166903eb282f840a1 = L.marker(
+                [28.65083, 77.12087],
+                {
+}
+            ).addTo(map_cab220cab46c478e082dd8f5911f6064);
+        
+    
+            var icon_ab81b7aa9924edfbbeb010c1a949a07f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1fff94f2a4915dd166903eb282f840a1.setIcon(icon_ab81b7aa9924edfbbeb010c1a949a07f);
+        
+    
+        var popup_d6096bbc45250c5447a29bc832ba03db = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_88ec7721087c00337dfa59359ddf7e40 = $(`<div id="html_88ec7721087c00337dfa59359ddf7e40" style="width: 100.0%; height: 100.0%;"><h2>Top Theatres in Delhi</h2>     <h3>Theatre Name: PVR Promenade: Vasant Kunj</h3>     <p>Revenue Potential: 13768525.38</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1139</p>     <p>Average Ticket Price: 431.72</p>     <p>Number of Screens: 7</p>     <br><br>     <h3>Theatre Name: PVR: Pacific, Delhi</h3>     <p>Revenue Potential: 11954811.22</p>     <p>Type: Multiplex</p>     <p>Theatre Chain: PVR</p>     <p>Total Seats: 1116</p>     <p>Average Ticket Price: 446.34</p>     <p>Number of Screens: 6</p>     </div>`)[0];
+                popup_d6096bbc45250c5447a29bc832ba03db.setContent(html_88ec7721087c00337dfa59359ddf7e40);
+            
+        
+
+        marker_1fff94f2a4915dd166903eb282f840a1.bindPopup(popup_d6096bbc45250c5447a29bc832ba03db)
+        ;
+
+        
+    
+    
+            var layer_control_7b89fcca1568a437fb4a42237e35ee4f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_43708de9086e23a91885b98dc4f11036,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_7b89fcca1568a437fb4a42237e35ee4f = L.control.layers(
+                layer_control_7b89fcca1568a437fb4a42237e35ee4f_layers.base_layers,
+                layer_control_7b89fcca1568a437fb4a42237e35ee4f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_cab220cab46c478e082dd8f5911f6064);
+
+        
+</script>
+</html>
